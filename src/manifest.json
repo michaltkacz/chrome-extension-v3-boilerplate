@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "chrome-extension-v3-boilerplate",
+  "description": "",
+  "version": "1.0.0",
+  "author": "https://github.com/michaltkacz/chrome-extension-v3-boilerplate",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["URL_HERE"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_ui": {
+    "page": "options.html"
+  }
+}
